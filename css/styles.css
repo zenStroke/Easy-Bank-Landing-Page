@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 /* Nav bar styles */
 nav {
     display: grid;
@@ -17,18 +22,167 @@ nav {
 }
 
 .button, .logo {
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     padding: 0;
 }
 
 /* button styles */
 
-button {
-    background-color: hsl(136, 65%, 51%);
+.btn {
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 25%;
+    padding: 13px 25px;
+    border-radius: 20px;
     color: white;
-    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+    /* display: inline-block; */
+
+    /* The last property may be necessary for the second button in section-1 */
+}
+
+.btn:hover {
+    transition: 0.5s;
+    filter: brightness(130%);
+}
+
+/* Main content styles */
+
+/* main {
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+
+.content {
+    /* is width: 100%; necessary? */
+    width: 100%;
+    height: 650px;
+}
+
+/* section-1 */
+
+.section-one {
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    background-color: hsl(0, 0%, 98%);
+}
+
+.conversion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 22% 20% 20% 25%;
+    /* padding: px px px; */
+}
+
+.conversion-txt {
+    line-height: 150%;
+    font-size: 17px;
+}
+
+.title {
+    font-size: 56px;
+    /* font-weight: 300; */
+}
+
+.image-wrapper {
+    position: relative;
+    /* overflow: ; */
+    height: 600px;
+    height: 100%;
+    width: 100%;
+}
+
+.images {
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-position: 13% 65%;
+    /* object-fit: auto; */
+    background-repeat: no-repeat;
+    /* position: relative; */
+    /* are the bottom two necessary? */
+    /* height: 100%;
+    width: 100%; */
+    width: 50vw;
+    height: 620px;
+}
+
+.image {
+    /* overflow: hidden; */
+    /* object-fit: cover; */
+    /* width: 50vw;
+    height: 620px; */
+}
+
+.front-image {
+    width: 50vw;
+    height: 820px;
+    /* object-fit: none; */
+    object-fit: cover;
+    /* enable object-position: -190% 70%; with a height enabled and see what happens */
+    /* object-position: -190% 70%; */
+    /* object-position: -190% 210%; */
+    object-position: 50% 180%;
+    /* position: absolute;
+    left: 17%;
+    top: -20%;  */
+    overflow: visible;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* overflow: hidden; */
+}
+
+/* .back-image {
+    position: absolute;
+} */
+
+.section-two {
+    background-color: hsl(220, 16%, 96%);
+    display: grid;
+    grid-template-rows: 35% 65%;
+    height: 450px;
+    width: 1068.75px;
+    padding: 100px 178.125px;
+    row-gap: 20px;
+}
+
+.section-two-wrapper {
+
+}
+
+.why-us {
+    /* height: 128px; */
+
+}
+
+.sub-title {
+    font-size: 40px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    height: 272.5px;
+}
+
+.sub-sub-title {
+    font-size: 21px;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.section-three {
+    background-color: (0, 0%, 98%)
 }
