@@ -9,7 +9,7 @@ body {
 }
 
 /* Nav bar styles */
-nav {
+nav.header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
@@ -49,11 +49,6 @@ nav {
 
 /* Main content styles */
 
-/* main {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
 .content {
     /* is width: 100%; necessary? */
     width: 100%;
@@ -79,12 +74,12 @@ nav {
     /* padding: px px px; */
 }
 
-.conversion-txt {
+.conversion-txt p {
     line-height: 150%;
     font-size: 17px;
 }
 
-.title {
+.heading h1{
     font-size: 56px;
     /* font-weight: 300; */
 }
@@ -111,13 +106,13 @@ nav {
 }
 
 .image {
-    /* overflow: hidden; */
+    overflow: hidden;
     /* object-fit: cover; */
     /* width: 50vw;
     height: 620px; */
 }
 
-.front-image {
+.image .front-image {
     width: 50vw;
     height: 820px;
     /* object-fit: none; */
@@ -130,6 +125,8 @@ nav {
     left: 17%;
     top: -20%;  */
     overflow: visible;
+    position: relative;
+    right: -100px;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,16 +149,7 @@ nav {
     row-gap: 20px;
 }
 
-.section-two-wrapper {
-
-}
-
-.why-us {
-    /* height: 128px; */
-
-}
-
-.sub-title {
+.sub-heading h2{
     font-size: 40px;
 }
 
@@ -172,7 +160,7 @@ nav {
     height: 272.5px;
 }
 
-.sub-sub-title {
+.sub-sub-heading {
     font-size: 21px;
 }
 
@@ -182,7 +170,64 @@ nav {
     justify-content: space-between;
 }
 
+.conversion-subtxt p {
+    line-height: 150%;
+    font-size: 16.5px;
+}
 
 .section-three {
-    background-color: (0, 0%, 98%)
+    background-color: hsl(0, 0%, 98%);
+    display: grid;
+    grid-template-rows: 15% 85%;
+    height: 490px;
+    width: 1068.75px;
+    padding: 80px 178.125px;
+    row-gap: 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.article-img {
+    height: 190px;
+}
+
+.article-img img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: 50px 50px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.author p {
+    font-size: 12px;
+}
+
+.blurb p {
+    font-size: 14.5px;
+    line-height: 150%;
+}
+
+nav.footer {
+    
 }
