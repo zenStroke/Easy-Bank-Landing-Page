@@ -22,7 +22,6 @@ nav.header {
 }
 
 .button, .logo {
-    /* align-items: center; */
     text-align: center;
     padding: 0;
 }
@@ -37,9 +36,6 @@ nav.header {
     color: white;
     border: 1px solid transparent;
     cursor: pointer;
-    /* display: inline-block; */
-
-    /* The last property may be necessary for the second button in section-1 */
 }
 
 .btn:hover {
@@ -50,7 +46,6 @@ nav.header {
 /* Main content styles */
 
 .content {
-    /* is width: 100%; necessary? */
     width: 100%;
     height: 650px;
 }
@@ -61,7 +56,6 @@ nav.header {
     /* position: relative; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr; */
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -71,7 +65,6 @@ nav.header {
     align-items: flex-start;
     justify-content: space-around;
     padding: 22% 20% 20% 25%;
-    /* padding: px px px; */
 }
 
 .conversion-txt p {
@@ -81,12 +74,10 @@ nav.header {
 
 .heading h1{
     font-size: 56px;
-    /* font-weight: 300; */
 }
 
 .image-wrapper {
     position: relative;
-    /* overflow: ; */
     height: 600px;
     height: 100%;
     width: 100%;
@@ -95,49 +86,24 @@ nav.header {
 .images {
     background-image: url(../images/bg-intro-desktop.svg);
     background-position: 13% 65%;
-    /* object-fit: auto; */
     background-repeat: no-repeat;
-    /* position: relative; */
-    /* are the bottom two necessary? */
-    /* height: 100%;
-    width: 100%; */
     width: 50vw;
     height: 620px;
 }
 
 .image {
     overflow: hidden;
-    /* object-fit: cover; */
-    /* width: 50vw;
-    height: 620px; */
 }
 
 .image .front-image {
     width: 50vw;
     height: 820px;
-    /* object-fit: none; */
     object-fit: cover;
-    /* enable object-position: -190% 70%; with a height enabled and see what happens */
-    /* object-position: -190% 70%; */
-    /* object-position: -190% 210%; */
     object-position: 50% 180%;
-    /* position: absolute;
-    left: 17%;
-    top: -20%;  */
     overflow: visible;
     position: relative;
     right: -100px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-    /* overflow: hidden; */
 }
-
-/* .back-image {
-    position: absolute;
-} */
 
 .section-two {
     background-color: hsl(220, 16%, 96%);
@@ -215,7 +181,6 @@ nav.header {
     height: 190px;
     width: 100%;
     object-fit: cover;
-    /* object-position: 50px 50px; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
